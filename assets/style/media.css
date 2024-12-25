@@ -1,0 +1,154 @@
+@media (max-width: 1200px){
+    .catalog__content{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 992px){
+    
+    .nav__content{
+        padding: 0px 15px;
+    }
+
+    .nav__form input{
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 0%;
+        opacity: 0;
+        transition: .5s;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        z-index: 100;
+    }
+
+    .nav__form:hover.nav__form input{
+        width: 100%;
+        opacity: 1;
+    }
+    
+    .poster{
+        min-height: 600px;
+    }
+
+    .poster__title{
+        font-size: 60px;
+    }
+
+    .poster__descr{
+        font-size: 30px;
+    }
+
+    .about__us{
+        padding: 50px 0;
+    }
+
+    .about__us-image{
+        width: 100%;
+    }
+
+    .about_us-title-descr__part__one, .about_us-title-descr__part__two{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .nav__content{
+        padding: 30px 15px;
+    }
+
+    .nav__menu-btn{
+        margin-left: auto;
+        margin-right: 10px;
+        display: flex;
+    }
+
+    .nav__list{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background: #3E8989;
+        transform: scaleY(0);
+        opacity: 0;
+        transform-origin: top;
+        transition: .5s;
+        gap: 0;
+    }
+
+    input[type='checkbox']:checked~ .nav__list{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .nav__list-link{
+        padding: 20px;
+    }
+
+    .poster{
+        min-height: 400px;
+    }
+
+    .poster__title{
+        font-size: 50px;
+    }
+
+    .about__us__content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .contacts-title{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 30px;
+
+    }
+
+    .contacts__content{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contacts-title-descr{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .email{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px){
+
+    .poster__title{
+        font-size: 40px;
+    }
+
+    .poster__descr{
+        font-size: 20px;
+    }
+
+    .about__us-image img{
+        width: 100%;
+    }
+
+    .about__us-title{
+        font-size: 30px;
+    }
+
+    .catalog-title{
+        font-size: 30px;
+    }
+
+    .contacts-title{
+        font-size: 30px;
+    }
+}
